@@ -3,6 +3,7 @@ package com.example.uts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -31,15 +32,44 @@ public class DataSiswa extends AppCompatActivity {
         handphoneInput = findViewById(R.id.input_handphone);
         keteranganInput = findViewById(R.id.input_keterangan);
 
+    }
+
+    public void handleOk(View view) {
         nis = nisInput.getText().toString();
         nama = namaInput.getText().toString();
         alamat = alamatInput.getText().toString();
         handphone = handphoneInput.getText().toString();
         keterangan = keteranganInput.getText().toString();
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
 
+        // set title dialog
+        alertDialogBuilder.setTitle("Data siswa");
+
+        // set pesan dari dialog
+        alertDialogBuilder
+                .setMessage("Nis : " + nis + "\nNama : " + nama + "\nAlamat : "+ alamat +"\nhandphone : "+handphone +"\nKeterangan : "+keterangan)
+                .setIcon(R.mipmap.ic_launcher)
+                .setCancelable(false)
+                .setPositiveButton("Ya",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // jika tombol diklik, maka akan menutup activity ini
+                        DataSiswa.this.finish();
+                    }
+                })
+                .setNegativeButton("Tidak",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // jika tombol ini diklik, akan menutup dialog
+                        // dan tidak terjadi apa2
+                        dialog.cancel();
+                    }
+                });
+
+        // membuat alert dialog dari builder
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // menampilkan alert dialog
+        alertDialog.show();
     }
 
-    public void handleOk(View view) {
-
     }
-}
