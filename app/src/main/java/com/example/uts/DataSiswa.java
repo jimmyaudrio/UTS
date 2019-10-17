@@ -49,7 +49,7 @@ public class DataSiswa extends AppCompatActivity {
 
         // set pesan dari dialog
         alertDialogBuilder
-                .setMessage("Nis : " + nis + "\nNama : " + nama + "\nAlamat : "+ alamat +"\nhandphone : "+handphone +"\nKeterangan : "+keterangan)
+                .setMessage("Nis : " + nis + "\nNama : " + nama + "\nAlamat : "+ alamat +"\nHandphone : "+handphone +"\nKeterangan : "+keterangan)
                 .setIcon(R.mipmap.ic_launcher)
                 .setCancelable(false)
                 .setPositiveButton("Tutup",new DialogInterface.OnClickListener() {

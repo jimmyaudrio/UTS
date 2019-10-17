@@ -1,7 +1,21 @@
 <resources>
     <string name="app_name">Uts</string>
-    <string name="lipsum">Murid ini adalah pindahan dari sekolah yang berada di kota jakartaa gess, murid ini aslinya adalah orang
-    irak dan tinggal di Indonesia
-    sekian dari saya waalaikumsalam
-    tess</string>
+    <string name="siswa">SISWA</string>
+    <string name="guru">GURU</string>
+    <string name="mapel">MATA PELAJARAN</string>
+    <string name="ekstra">EKSTRAKULIKULER</string>
+    <string name="kantin">KANTIN</string>
+    <string name="kopsis">KOPSIS</string>
+    <string name="satpam">SATPAM</string>
+    <string name="uks">UKS</string>
+    <string name="ruangkel">RUANG KELAS</string>
+    <string name="exit">EXIT</string>
+
+    <string name="judul">DATA SISWA</string>
+    <string name="nis">Nis</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="handphone">Handphone</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="ok">OK</string>
 </resources>

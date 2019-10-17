@@ -5,6 +5,7 @@ cukup bungkus konten-->
 <ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="#F70000"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <!--    sebuah scrollview hanya bisa memiliki 1 anak-->
@@ -22,61 +23,61 @@ cukup bungkus konten-->
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:onClick="handleSiswa"
-            android:text="Siswa" />
+            android:text="@string/siswa" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Guru" />
+            android:text="@string/guru" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Mata Pelajaran" />
+            android:text="@string/kantin" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Ekstrakulikuler" />
+            android:text="@string/ekstra" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Kantin" />
+            android:text="@string/kopsis" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Kopsis" />
+            android:text="@string/mapel" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Satpam" />
+            android:text="@string/ruangkel" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="UKS" />
+            android:text="@string/uks" />
 
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Ruang Kelas" />
+            android:text="@string/satpam" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Exit"
+            android:text="@string/exit"
             android:onClick="handleExit"/>
     </LinearLayout>
 </ScrollView>
