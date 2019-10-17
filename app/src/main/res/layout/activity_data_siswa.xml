@@ -115,9 +115,10 @@
         <EditText
             android:id="@+id/input_keterangan"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:inputType="text|textMultiLine"
             android:layout_weight="2"
-            android:inputType="none" />
+             />
     </LinearLayout>
 
     <Button
