@@ -9,13 +9,11 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonsiswa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonsiswa = findViewById(R.id.buttonsiswa);
     }
 
     public void handleSiswa(View view) {
