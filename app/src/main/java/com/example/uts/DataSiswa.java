@@ -40,6 +40,7 @@ public class DataSiswa extends AppCompatActivity {
         alamat = alamatInput.getText().toString();
         handphone = handphoneInput.getText().toString();
         keterangan = keteranganInput.getText().toString();
+
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
 
@@ -51,17 +52,10 @@ public class DataSiswa extends AppCompatActivity {
                 .setMessage("Nis : " + nis + "\nNama : " + nama + "\nAlamat : "+ alamat +"\nhandphone : "+handphone +"\nKeterangan : "+keterangan)
                 .setIcon(R.mipmap.ic_launcher)
                 .setCancelable(false)
-                .setPositiveButton("Ya",new DialogInterface.OnClickListener() {
+                .setPositiveButton("Tutup",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         // jika tombol diklik, maka akan menutup activity ini
                         DataSiswa.this.finish();
-                    }
-                })
-                .setNegativeButton("Tidak",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // jika tombol ini diklik, akan menutup dialog
-                        // dan tidak terjadi apa2
-                        dialog.cancel();
                     }
                 });
 
