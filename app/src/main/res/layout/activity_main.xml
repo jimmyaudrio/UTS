@@ -5,7 +5,7 @@ cukup bungkus konten-->
 <ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#F70000"
+    android:background="#008577"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <!--    sebuah scrollview hanya bisa memiliki 1 anak-->
@@ -14,6 +14,7 @@ cukup bungkus konten-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#030303"
         android:orientation="vertical"
         android:padding="20dp"
         tools:context=".MainActivity">
@@ -22,8 +23,10 @@ cukup bungkus konten-->
             android:id="@+id/buttonsiswa"
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:background="#F50710"
             android:onClick="handleSiswa"
-            android:text="@string/siswa" />
+            android:text="@string/siswa"
+            android:textColor="#F7EFEF" />
 
         <Button
             android:id="@+id/button2"
@@ -35,7 +38,9 @@ cukup bungkus konten-->
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="@string/kantin" />
+            android:background="#FC0404"
+            android:text="@string/kantin"
+            android:textColor="#FFF9F9" />
 
         <Button
             android:id="@+id/button4"
@@ -47,7 +52,9 @@ cukup bungkus konten-->
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="@string/kopsis" />
+            android:background="#FF0909"
+            android:text="@string/kopsis"
+            android:textColor="#FFF9F9" />
 
         <Button
             android:id="@+id/button6"
@@ -59,7 +66,9 @@ cukup bungkus konten-->
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="@string/ruangkel" />
+            android:background="#F80303"
+            android:text="@string/ruangkel"
+            android:textColor="#F5EFEF" />
 
         <Button
             android:id="@+id/button8"
@@ -71,13 +80,15 @@ cukup bungkus konten-->
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="@string/satpam" />
+            android:background="#FD0101"
+            android:text="@string/satpam"
+            android:textColor="#FFF8F8" />
 
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="@string/exit"
-            android:onClick="handleExit"/>
+            android:onClick="handleExit"
+            android:text="@string/exit" />
     </LinearLayout>
 </ScrollView>
